@@ -1,0 +1,187 @@
+:root {
+  /* Primary brand color  | IRIS #4D5AE5    */
+  --primaly-brand-color: #4d5ae5;
+  /* Pressed state color | OCEAN #404BBF   */
+  --pressed-state-color: #404bbf;
+  /* Overlays & shadows & headings color | NAVY BLUE #2E2F42 */
+  --dark-color: #2e2f42;
+  /* Valid fields & success messages color | GREEN #31D0AA */
+  --success-color: #31d0aa;
+  /* Body text color | SLATE #434455 */
+  --text-color: #434455;
+  /* Helper text & deemphasized subtle text color | LIGHT SLATE #8E8F99 */
+  --subtle-text-color: #8e8f99;
+  /* Accent & hairlines & subtle backgrounds color | CORNFLOWER #E7E9FC */
+  --accent-color: #e7e9fc;
+  /* Light mode backgrounds & dialogs/alerts color | CLOUD #F4F4FD */
+  --light-color: #f4f4fd;
+  /* Overlay color | NAVY BLUE MODAL #2E2F42 */
+  --modal-overlay-color: #2e2f42;
+  /* Hero image background color | GREY #2E2F42 */
+  --hero-background-color: #2e2f42;
+  /* Header & team & portfolio card background color | WHITE #FFFFFF */
+  --white-background-color: #ffffff;
+  /* Modal background color | DAIRY #FCFCFC */
+  --modal-background-color: #fcfcfc;
+  /* White text color | | WHITE #FFFFFF */
+  --white-text-color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+/* Remove the underlining in the links */
+.link {
+  text-decoration: none;
+}
+
+/* Remove list markers */
+.list {
+  list-style-type: none;
+}
+
+/* Hide h2 on index.html & h1 on portfolio.html */
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Index page CSS Styles */
+.page-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--white-text-color);
+}
+
+.order-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-text-color);
+  background-color: var(--primaly-brand-color);
+  border: none;
+  cursor: pointer;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.features-text {
+  font-weight: 400;
+  color: ;
+}
+
+.company-product-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.company-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.team-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.team-list-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.team-list-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.team-list {
+  background-color: var(--white-background-color);
+}
+
+.page-title-section {
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+.company-product-section {
+  text-align: center;
+}
+
+.company-team-section {
+  background-color: var(--light-color);
+  text-align: center;
+}
+/* Portfolio CSS Styles */
+
+.portfolio-filter-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primaly-brand-color);
+  background-color: var(--light-color);
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--pressed-state-color);
+}
+
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.portfolio-type {
+  font-weight: 400;
+  color: var(--text-color);
+}
