@@ -46,19 +46,6 @@ body {
   list-style-type: none;
 }
 
-/* Hide h2 on index.html & h1 on portfolio.html
-.visually-hidden {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
 /* Web Stugio logo CSS Styles */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -76,7 +63,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -197,7 +183,7 @@ body {
   color: var(--dark-color);
 }
 
-.team-list-position {
+.team-list-job-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
