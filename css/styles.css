@@ -46,7 +46,7 @@ body {
   list-style-type: none;
 }
 
-/* Hide h2 on index.html & h1 on portfolio.html */
+/* Hide h2 on index.html & h1 on portfolio.html
 .visually-hidden {
   width: 1px;
   height: 1px;
@@ -57,15 +57,14 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* Web Stugio logo CSS Styles */
-.logo-web-part {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  align-items: center;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primaly-brand-color);
@@ -76,7 +75,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -96,12 +95,24 @@ body {
   color: var(--dark-color);
 }
 
+.navigation-menu-item:hover,
+.navigation-menu-item:focus {
+  color: var(--pressed-state-color);
+}
+
+.address-information {
+  font-style: normal;
+}
+
 .address-item {
   font-weight: 400;
-  font-style: normal;
   color: var(--text-color);
 }
 
+.address-item:hover,
+.address-item:focus {
+  color: var(--pressed-state-color);
+}
 /* Footer SCC Styles */
 .footer-section {
   background-color: var(--dark-color);
@@ -117,11 +128,12 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   color: var(--white-text-color);
 }
 
 .order-button {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -142,6 +154,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--dark-color);
 }
 
@@ -153,6 +166,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
 }
@@ -161,6 +175,8 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
 }
@@ -177,6 +193,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--dark-color);
 }
 
@@ -223,6 +240,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--dark-color);
 }
 
