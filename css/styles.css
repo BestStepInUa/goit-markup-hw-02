@@ -33,7 +33,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  background-color: var(--light-color);
+  background-color: var(--white-background-color);
 }
 
 /* Remove the underlining in the links */
@@ -57,6 +57,59 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* Web Stugio logo CSS Styles */
+.logo-web-part {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primaly-brand-color);
+}
+
+.logo-studio-part,
+.logo-studio-part-in-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-studio-part {
+  color: var(--dark-color);
+}
+
+.logo-studio-part-in-footer {
+  color: var(--light-color);
+}
+
+/* Header SCC Styles */
+.navigation-menu-item {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.address-item {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+/* Footer SCC Styles */
+.footer-section {
+  background-color: var(--dark-color);
+}
+
+.footer-text {
+  font-weight: 400;
+  color: var(--light-color);
 }
 
 /* Index page CSS Styles */
@@ -94,7 +147,6 @@ body {
 
 .features-text {
   font-weight: 400;
-  color: ;
 }
 
 .company-product-title {
@@ -109,7 +161,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
 }
@@ -133,7 +184,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--text-color);
 }
 
 .team-list {
@@ -145,13 +195,8 @@ body {
   text-align: center;
 }
 
-.company-product-section {
-  text-align: center;
-}
-
 .company-team-section {
   background-color: var(--light-color);
-  text-align: center;
 }
 /* Portfolio CSS Styles */
 
