@@ -28,12 +28,12 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-background-color);
+  color: var(--text-color);
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
-  background-color: var(--white-background-color);
 }
 /* Reset */
 h1,
@@ -92,20 +92,20 @@ img {
 
 /* Web Stugio logo CSS Styles */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  color: var(--primaly-brand-color);
   font-weight: 800;
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primaly-brand-color);
 }
 
 .logo-studio-part,
 .logo-studio-part-in-footer {
-  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -125,9 +125,30 @@ img {
   padding-bottom: 24px;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 76px;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .navigation-menu-item {
-  font-weight: 500;
   color: var(--dark-color);
+  font-weight: 500;
 }
 
 .navigation-menu-item:hover,
@@ -139,9 +160,15 @@ img {
   font-style: normal;
 }
 
+.address-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .address-item {
-  font-weight: 400;
   color: var(--text-color);
+  font-weight: 400;
 }
 
 .address-item:hover,
@@ -150,52 +177,52 @@ img {
 }
 /* Footer SCC Styles */
 .footer-section {
-  background-color: var(--dark-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: var(--dark-color);
 }
 
 .footer-text {
-  font-weight: 400;
-  color: var(--light-color);
   margin-top: 16px;
+  color: var(--light-color);
+  font-weight: 400;
 }
 
 /* Index page CSS Styles */
 /* Hero(Page title) section styles*/
 .page-title-section {
-  background-color: var(--dark-color);
-  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-color: var(--dark-color);
+  text-align: center;
 }
 
 .page-title {
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  color: var(--white-text-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: var(--white-text-color);
-  max-width: 496px;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 48px;
 }
 
 .order-button {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--white-text-color);
-  background-color: var(--primaly-brand-color);
-  border: none;
-  cursor: pointer;
+  display: block;
   margin: 0 auto;
   padding: 16px 32px;
-  display: block;
+  border: none;
+  background-color: var(--primaly-brand-color);
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 .order-button:is(:hover, :focus) {
@@ -205,15 +232,15 @@ img {
 /* Features section styles */
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .features {
@@ -221,13 +248,25 @@ img {
   padding-bottom: 120px;
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 264px;
+}
+
 .features-title {
+  color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--dark-color);
-  margin-bottom: 8px;
 }
 
 .features-text {
@@ -239,47 +278,57 @@ img {
   padding-bottom: 120px;
 }
 
+.company-product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .company-product-title {
+  margin-bottom: 72px;
+  color: var(--dark-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: var(--dark-color);
-  margin-bottom: 72px;
 }
 
 /* Our team section styles */
 .company-team-section {
-  background-color: var(--light-color);
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: var(--light-color);
 }
 .company-team-title {
+  margin-bottom: 72px;
+  color: var(--dark-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
-  color: var(--dark-color);
-  margin-bottom: 72px;
+}
+
+.company-team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-list-title {
+  color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  color: var(--dark-color);
 }
 
 .team-list-name {
+  color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--dark-color);
 }
 
 .team-list-job-title {
@@ -295,33 +344,33 @@ img {
 /* Portfolio CSS Styles */
 
 .portfolio-filter-button {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  border: none;
+  background-color: var(--light-color);
+  color: var(--primaly-brand-color);
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--primaly-brand-color);
-  background-color: var(--light-color);
-  border: none;
   cursor: pointer;
 }
 
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
-  color: var(--white-text-color);
   background-color: var(--pressed-state-color);
+  color: var(--white-text-color);
 }
 
 .portfolio-title {
+  color: var(--dark-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--dark-color);
 }
 
 .portfolio-type {
-  font-weight: 400;
   color: var(--text-color);
+  font-weight: 400;
 }
