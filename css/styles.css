@@ -28,13 +28,57 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
   background-color: var(--white-background-color);
 }
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+/* Reset end */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 2px solid red;
+}
+/* End of Reset */
 
 /* Remove the underlining in the links */
 .link {
@@ -48,7 +92,7 @@ body {
 
 /* Web Stugio logo CSS Styles */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -59,7 +103,7 @@ body {
 
 .logo-studio-part,
 .logo-studio-part-in-footer {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -76,6 +120,11 @@ body {
 }
 
 /* Header SCC Styles */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .navigation-menu-item {
   font-weight: 500;
   color: var(--dark-color);
@@ -102,24 +151,39 @@ body {
 /* Footer SCC Styles */
 .footer-section {
   background-color: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
   font-weight: 400;
   color: var(--light-color);
+  margin-top: 16px;
 }
 
 /* Index page CSS Styles */
+/* Hero(Page title) section styles*/
+.page-title-section {
+  background-color: var(--dark-color);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .page-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-text-color);
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .order-button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -129,11 +193,32 @@ body {
   background-color: var(--primaly-brand-color);
   border: none;
   cursor: pointer;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: block;
 }
 
-.order-button:hover,
-.order-button:focus {
+.order-button:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
+}
+
+/* Features section styles */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .features-title {
@@ -142,10 +227,16 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .features-text {
   font-weight: 400;
+}
+
+/* What are we doing? section styles */
+.company-product-section {
+  padding-bottom: 120px;
 }
 
 .company-product-title {
@@ -155,8 +246,15 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
+/* Our team section styles */
+.company-team-section {
+  background-color: var(--light-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .company-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -165,6 +263,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .team-list-title {
@@ -193,18 +292,10 @@ body {
   background-color: var(--white-background-color);
 }
 
-.page-title-section {
-  background-color: var(--dark-color);
-  text-align: center;
-}
-
-.company-team-section {
-  background-color: var(--light-color);
-}
 /* Portfolio CSS Styles */
 
 .portfolio-filter-button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
